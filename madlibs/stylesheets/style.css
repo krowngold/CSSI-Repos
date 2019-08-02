@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: lightcoral;
+  font-size: 20pt;
+}
+
+input {
+  height: 110%;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  display: flex;
+  background-color: lightgrey;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+div#questions {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}

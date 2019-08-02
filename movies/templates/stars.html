@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stars</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+  </head>
+  <body>
+    <ul><b class = "title">Here are some stars:</b>
+      <div>
+      {% for star in star_list %}
+      <li><b>{{star.name}}; {{star.oscars}} Oscar awards<b></li>
+      {% endfor %}
+      </div>
+    </ul>
+  </body>
+</html>

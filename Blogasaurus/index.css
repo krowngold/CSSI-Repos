@@ -1,0 +1,69 @@
+img {
+  width: 150px;
+}
+material.navy-gray.min.css;
+
+
+div.flexContainer {
+  /* background-color: gray; */
+  display: flex;
+  width: 20%
+  align-items: center;
+}
+
+.blueText {
+  color: blue;
+}
+
+h1#header {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Setting border and padding for the unordered lists*/
+ul {
+  list-style: circle;
+  border: 3px solid #faf084;
+  /* border: 3px #faf084; */
+  /* border-color: #faf084; */
+  border-radius: 15px;
+  padding:12px 0px 12px 20px;
+  width:270px;
+  float: left;
+  margin-right: 2%;
+}
+
+p {
+  font-size: 22px;
+  font-family: "Geneva", monospace;
+  color: papayawhip;
+}
+
+li {
+  color: papayawhip;
+}
+
+body {
+/* background-color: Lightgray; */
+background-image: url(https://i.gifer.com/VAtA.gif);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Setting the lists next to each other */
+div#personal {
+  float:left;
+  margin-right: 10%
+}
+
+ul#music_taste {
+  float:right;
+  list-style: none;
+}
+
+h2 {
+  color: #FAB585;
+}
+
+/* .personal_list {
+  border: 2px papayawhip;
+} */

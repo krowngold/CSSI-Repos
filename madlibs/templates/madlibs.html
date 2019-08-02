@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Madlibs</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+
+  <body>
+    <h2>Welcome to Madlibs!</h2>
+
+    <div id = "questions">
+    <form method="POST" action="/">
+      Adjective:<input type="text" style="color:#888;" value = "Adjective" title="Adjective" name="tallAdj" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+      <br>
+      Adjective:<input type="text" style="color:#888;" value = "Adjective" name="niceAdj" title = "Adjecctive" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+      <br>
+      Adjective:<input type="text" name="niceBuildingAdj" style="color:#888;" value = "Adjective" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+      <br>
+      Name:<input type="text" name="smithName" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+      <br>
+      Animal:<input type="text" name="animalName" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+      <br>
+      Noun:<input type="text" name="weirdFood" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+      <br>
+      Vehicle:<input type="text" name="vehicle" onfocus="infocus(this)"
+      onblur="inputblur(this)"/>
+        <input type="submit" name="submit" value="Generate Story"/>
+    </form>
+    </div>
+
+    <script src="scripts/scripts.js" charset="utf-8"></script>
+  </body>
+</html>

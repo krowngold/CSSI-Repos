@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+  </head>
+  <body>
+    <ul><b class="title">Here are some movies:</b>
+      <p>Current email is: {{current_user.email()}}</p>
+      <p>Current user is: {{current_user.user_id()}}</p>
+
+      {% for movie in movies %}
+        <div class="info">
+        <p><b>{{movie.title}}</b></p>
+        {% for key in movie.star_keys %}
+          {% set star = key.get() %}
+        <!-- look up number of oscars given a star name -->
+          <!-- <li><a href = "viewstars.html?star={{star}}">{{star}}</a></li> -->
+          <li>{{star.name}}: {{star.oscars}} Oscars</li>
+          <br>
+        {% endfor %}
+
+        </div>
+      {% endfor %}
+    </ul>
+    <!-- <a href="/populateDatabase">Populate Database</a> -->
+
+    <!-- <div class="userinput">
+      <form action="main.html" method="post">
+          <p> Log in! </p>
+          Username:    <input type="text" name="name">
+          <br>
+          Password:    <input type="password" name="pwd">
+          <input type="submit" action="submit" name="credSubmit">
+      </form>
+    </div> -->
+  </body>
+</html>

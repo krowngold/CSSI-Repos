@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- display emails by using variable inbox from main.py -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inbox</title>
+    <link rel="stylesheet" href = "stylesheets/style.css">
+  </head>
+  <body>
+    <h2>Here's your inbox</h2>
+    <ul>
+    {% for email in inbox %}
+      <li>
+        {% if email.unread %}
+          <b>{{email.subject}}</b>
+        {% else %}
+          {{email.subject}}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+
+
+    <h2>Here's your spam</h2>
+    <ul>
+    {% for email in spam %}
+      <li>
+        {% if email.unread %}
+          <b>{{email.subject}}</b>
+        {% else %}
+          {{email.subject}}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
